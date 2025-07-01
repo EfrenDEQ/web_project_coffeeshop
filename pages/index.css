@@ -8,12 +8,19 @@
 }
 
 .header {
+  height: 100vh;
   min-height: 720px;
   max-height: 800px;
   background-color: #ffffff;
   background-image: url(../images/background_header.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px 80px 40px;
 }
 
 .nav {
@@ -24,7 +31,7 @@
 .nav__logo {
   position: relative;
   top: 30px;
-  left: 30px;
+  left: -50px;
   width: 105px;
   height: 39px;
 }
@@ -33,8 +40,6 @@
   display: flex;
   list-style-type: none;
   column-gap: 20px;
-  padding: 0;
-  margin: 30px 80px 0 0;
   height: 30px;
 }
 
@@ -53,8 +58,8 @@
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
-  margin: 183px 0 0 80px;
-  max-width: 709px;
+  margin: 183px 0 0 0;
+  max-width: 600px;
 }
 
 .header__span-accent {
@@ -69,12 +74,12 @@
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
-  margin: 28px 0 0 80px;
+  margin: 28px 0 0 0;
   max-width: 683px;
 }
 
 .header__image {
-  width: 646px;
+  max-width: 646px;
   height: 568px;
   position: absolute;
   right: 5px;
@@ -82,7 +87,7 @@
 }
 
 .header__footer {
-  margin: 150px 80px 40px 80px;
+  margin-top: auto;
   position: relative;
 }
 
@@ -107,6 +112,7 @@
   background-image: url(../images/background_recipes.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   color: #ffffff;
 }
 
@@ -154,4 +160,102 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #0a2850;
+  padding: 100px 0 120px 0;
+}
+
+.reservation__title {
+  font-family: "Inter", arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+.reservation__form {
+  max-width: 385px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-family: "Inter", arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  padding-bottom: 8px;
+}
+
+.form__input {
+  border: 4px;
+  font-family: "Inter", arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
+  color: #838383;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 15px 0 15px 20px;
+}
+
+.form__button {
+  border-radius: 4px;
+  font-family: "Inter", arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 385px;
+  height: 60px;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.form__button:enabled {
+  background-color: #2f80ed;
+  color: #ffffff;
+}
+
+.form__button:hover {
+  background-color: rgba(47, 128, 237, 0.7);
+}
+
+.form__label_aling_checkbox {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  padding: 0;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.form__checkbox:checked::after {
+  background-color: #2f80ed;
+  background-image: url(../images/check.svg);
 }
