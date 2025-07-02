@@ -10,7 +10,6 @@
       content="HTML, CSS, Pseudoclases, Pseudoelementos, Posicionamiento"
     />
     <meta name="author" content="Efrén Espinosa" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +33,7 @@
             <li>
               <a class="nav__link" href="#reservation">Reservar una mesa</a>
             </li>
-            <li><a class="nav__link">Contactos</a></li>
+            <li><a class="nav__link" href="#contacto">Contactos</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -151,7 +150,43 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="contacto">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img
+            class="footer__logo"
+            src="./images/logo_coffeeshop_light.svg"
+            alt="logo coffeeshop Tripleten"
+          />
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes Sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="logo de facebook"
+                  />
+                  facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="logo de instagram"
+                  />
+                  instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">Efrén Darío Espinosa Quiroga</p>
+      </footer>
     </div>
   </body>
 </html>
